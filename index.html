@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <link rel="stylesheet" href="css_thing.css" />
+  </head>
+  <body>
+    <div class="game">      
+      <div class="sidebar"> 
+        <h1 class="title">Tetris</h1>
+
+        <!-- need elements: next & score-->
+        <div class="box">
+
+          <!-- next piece-->
+          <div class="label">Next</div>
+          <canvas class="next" width="120" height="120"></canvas>
+
+          <!-- score-->
+          <div class="stat-grp"></div>
+          <div class="label">Score</div>
+          <div class="value">0</div>
+        </div>
+
+        <!-- sound btn -->
+       <button class="sound-btn">Sound: ON</button>
+
+      </div>
+
+      <!-- game board-->
+      <div class="board-container">
+      <canvas id="board" width="300" height="600"></canvas>
+
+      <!-- pause & game over box-->
+      <div class="overlay">
+        <div class="pause pause-title">Paused</div>
+        <div class="pause-resume">Press P to resume</div>
+      </div>
+     </div>
+
+     <!-- ctrl instruct box-->
+      <div class="ctrl-sidebar">
+        <div class="ctrl-box">
+          <div class="ctrl-title">Controls</div>
+          <div class="ctrl-instruct">
+            <p>Move Left: Left Arrow</p>
+            <p>Move Right: Right Arrow</p>
+            <p>Rotate: Up Arrow</p>
+            <p>Drop: Down Arrow</p>
+            <p>Pause: P</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="java_is_pain.js"></script>
+  </body>
+</html>
